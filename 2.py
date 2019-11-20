@@ -41,9 +41,7 @@ while running:
             pygame.draw.circle(screen, (255, 255, 255), event.pos, 10)
     screen.fill((0, 0, 0))
     for i in range(len(balls)):
-        print(balls[i])
         balls[i] = change_deg(balls[i])
-        print(balls[i])
         if balls[i][2] == 45:
             balls[i][0] += int(sqrt((clock.tick() / 10)**2 / 2)) + 1
             balls[i][1] -= int(sqrt((clock.tick() / 10)**2 / 2)) + 1
